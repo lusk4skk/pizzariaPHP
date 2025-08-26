@@ -1,3 +1,8 @@
+.card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  transform: translateY(-4px) scale(1.03);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
 body {
   height: 100vh;
   margin: 0;
@@ -91,5 +96,51 @@ body {
 
 .form-container input[type="submit"]:hover {
   background-color: #a0522d;
+}
+
+h4 {
+  padding-top: 25px;
+  margin: 100px 100px 20px 100px;
+  text-align: center;
+  color: #8B4513;
+  font-family: sans-serif;
+}
+
+p {
+  text-align: center;
+  color: #4b2e15;
+  font-family: sans-serif;
+  margin: 100px 100px 20px 100px;
+}
+
+.card-text {
+  color: #4b2e15;
+  font-family: sans-serif;
+  text-align: justify;
+  margin: 20px 20px 20px 20px;
+}
+
+.img-container {
+  background-image: url(Pizza1.jpg);
+  width: 100%;
+  height: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.img-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: inherit;
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
+  z-index: 0;
+}
+
+.img-container > * {
+  position: relative;
+  z-index: 1;
 }
 
