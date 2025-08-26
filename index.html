@@ -12,6 +12,7 @@
 
 <body>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
+<<<<<<< HEAD
             <div class="container-fluid">
                   <a class="navbar-brand" href="index.html">Pizzaria Legal</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -49,9 +50,39 @@
                   </div>
             </div>
       </nav>
+=======
+  <div class="container-fluid">
+   
+    <a class="navbar-brand" href="#">Inicio</a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Serviços</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./cardapio.html">Cardápio</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+>>>>>>> 10876431906fb761a09d78c01d4445ae45217a34
 
-      <img src="Pizza2.jpg" class="img-fluid" alt="...">
+<div class="img-container">
+      <img src="Pizza1.jpg" class="img-fluid" alt="img-grande">
+</div>
 
+<<<<<<< HEAD
       <footer class="footer-app">
             <div class="footer-container">
                   <div class="footer-column">
@@ -75,7 +106,63 @@
                   </div>
             </div>
       </footer>
+=======
+<h4>Sobre a pizzaria</h4>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod reiciendis numquam a nostrum delectus illo asperiores corporis in enim maiores minus perferendis ab 
+dolor veritatis doloribus, molestiae totam facilis minima!</p>
+>>>>>>> 10876431906fb761a09d78c01d4445ae45217a34
 
+<div class="varias-imgs">
+      <div class="card" style="width: 22rem;">
+            <img src="Pizza1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+      </div>
+      </div>
+
+      <div class="card" style="width: 22rem;">
+            <img src="Pizza2.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+      </div>
+      </div>
+
+      <div class="card" style="width: 22rem;">
+            <img src="Pizza3.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+      </div>
+      </div>
+      <link rel="stylesheet" href="style.css">
+
+<div class="form-container">
+  <h2>Pedido de Pizza</h2>
+  <form action="pedido.php" method="POST">
+    <label>Nome do Cliente:</label>
+    <input type="text" name="nome" required>
+
+    <label>Sabor da Pizza:</label>
+    <select name="sabor" required>
+      <option value="mussarela">Mussarela – R$40,00</option>
+      <option value="calabresa">Calabresa – R$32,00</option>
+      <option value="portuguesa">Portuguesa – R$35,00</option>
+    </select>
+
+    <label>Borda Recheada:</label>
+    <input type="radio" name="borda" value="sim" required> Sim (+R$10,00)<br>
+    <input type="radio" name="borda" value="nao" required> Não
+
+    <label>Bebidas:</label>
+    <input type="checkbox" name="bebidas[]" value="refrigerante"> Refrigerante – R$5,00<br>
+    <input type="checkbox" name="bebidas[]" value="suco"> Suco – R$10,00<br>
+    <input type="checkbox" name="bebidas[]" value="agua"> Água – R$6,00
+
+    <input type="submit" value="Enviar Pedido">
+  </form>
+</div>
+</div>
+     
+</div>
 </body>
 
 </html>
